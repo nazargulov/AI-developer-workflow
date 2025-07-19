@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  ai-workflow-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - ./AI:/app/AI
+    environment:
+      - NODE_ENV=development
+      - AI_TOOLS_ENABLED=true
+    command: npm run dev
+    restart: unless-stopped
+
+  # AI development tools container
+  ai-tools:
+    image: alpine:latest
+    volumes:
+      - ./AI:/workspace/AI
+    working_dir: /workspace
+    command: |
+      sh -c "
+        echo 'AI Tools Container Ready';
+        echo 'Available workflows:';
+        echo '  - Explore → Plan → Code → Review';
+        echo '  - Prototype → Rewrite → Improve'; 
+        echo '  - Build → Integrate → Delegate → Iterate';
+        tail -f /dev/null
+      "
+
+  # Optional: Redis for caching AI context
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+volumes:
+  redis_data:
