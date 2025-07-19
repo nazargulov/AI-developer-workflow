@@ -288,6 +288,103 @@
              min-width: fit-content;
          }
          
+         /* Mobile hamburger menu */
+         .mobile-menu-toggle {
+             display: none;
+             background: linear-gradient(135deg, #5B6CEA, #4C5FD5);
+             color: white;
+             border: none;
+             padding: 12px;
+             border-radius: 8px;
+             cursor: pointer;
+             font-size: 1.2em;
+             margin-bottom: 15px;
+             box-shadow: 0 4px 15px rgba(91, 108, 234, 0.3);
+             transition: all 0.3s ease;
+         }
+         .mobile-menu-toggle:hover {
+             transform: translateY(-2px);
+             box-shadow: 0 6px 20px rgba(91, 108, 234, 0.4);
+         }
+         .mobile-menu-toggle:active {
+             transform: translateY(0);
+         }
+         
+         /* Desktop: nav-content always visible */
+         @media (min-width: 769px) {
+             .nav-content {
+                 max-height: none !important;
+                 overflow: visible !important;
+             }
+         }
+         
+         /* Mobile responsive styles */
+         @media (max-width: 768px) {
+             .container {
+                 padding: 20px 15px;
+             }
+             
+             .nav-links {
+                 position: relative;
+                 top: 0;
+                 padding: 15px;
+             }
+             
+             .mobile-menu-toggle {
+                 display: block;
+                 width: 100%;
+             }
+             
+             .nav-content {
+                 max-height: 0;
+                 overflow: hidden;
+                 transition: max-height 0.3s ease-in-out;
+             }
+             
+             .nav-content.open {
+                 max-height: 500px;
+             }
+             
+             .nav-row {
+                 flex-direction: column;
+                 gap: 8px;
+                 margin-bottom: 15px;
+             }
+             
+             .nav-links a {
+                 text-align: center;
+                 padding: 12px 16px;
+                 display: block;
+                 font-size: 0.9em;
+                 border-radius: 6px;
+                 transition: all 0.2s ease;
+             }
+             
+             .nav-links a:hover {
+                 transform: translateX(5px);
+             }
+             
+             .slide {
+                 margin: 40px 0;
+                 padding: 20px 0;
+                 min-height: auto;
+             }
+             
+             .slide h2 {
+                 font-size: 1.8em;
+             }
+             
+             .metrics-grid {
+                 grid-template-columns: 1fr;
+                 gap: 15px;
+             }
+             
+             .workflow-box {
+                 padding: 15px;
+                 margin: 15px 0;
+             }
+         }
+         
          /* Print styles for presentation mode */
          @media print {
              .slide {
@@ -310,23 +407,28 @@
         </p>
 
         <div class="nav-links">
-            <div class="nav-row">
-                <a href="#slide1">1: Repository Structure</a>
-                <a href="#slide2">2: Pre-Code</a>
-                <a href="#slide3">3: Context Engineering</a>
-                <a href="#slide4">4: Workflow Patterns</a>
-                <a href="#slide5">5: Dev Cycle</a>
-                <a href="#slide6">6: Code Review</a>
-                <a href="#slide7">7: Guidelines</a>
-            </div>
-            <div class="nav-row">
-                <a href="#slide8">8: Jira Metrics</a>
-                <a href="#slide9">9: Survey Results</a>
-                <a href="#slide10">10: Comparison</a>
-                <a href="#slide11">11: Challenges</a>
-                <a href="#slide12">12: Success</a>
-                <a href="#slide13">13: Next Steps</a>
-                <a href="#slide14">14: Remember</a>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                📱 Навигация ≡
+            </button>
+            <div class="nav-content" id="navContent">
+                <div class="nav-row">
+                    <a href="#slide1">1: Repository Structure</a>
+                    <a href="#slide2">2: Pre-Code</a>
+                    <a href="#slide3">3: Context Engineering</a>
+                    <a href="#slide4">4: Workflow Patterns</a>
+                    <a href="#slide5">5: Dev Cycle</a>
+                    <a href="#slide6">6: Code Review</a>
+                    <a href="#slide7">7: Guidelines</a>
+                </div>
+                <div class="nav-row">
+                    <a href="#slide8">8: Jira Metrics</a>
+                    <a href="#slide9">9: Survey Results</a>
+                    <a href="#slide10">10: Comparison</a>
+                    <a href="#slide11">11: Challenges</a>
+                    <a href="#slide12">12: Success</a>
+                    <a href="#slide13">13: Next Steps</a>
+                    <a href="#slide14">14: Remember</a>
+                </div>
             </div>
         </div>
 
@@ -907,6 +1009,38 @@ done</pre>
     <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
 
     <script>
+        // Mobile menu toggle function
+        function toggleMobileMenu() {
+            const navContent = document.getElementById('navContent');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            
+            navContent.classList.toggle('open');
+            
+            // Update button text based on state
+            if (navContent.classList.contains('open')) {
+                toggle.innerHTML = '📱 Скрыть ✕';
+            } else {
+                toggle.innerHTML = '📱 Навигация ≡';
+            }
+        }
+
+        // Close mobile menu when clicking on navigation links
+        function setupMobileMenuClosing() {
+            const navLinks = document.querySelectorAll('.nav-links a');
+            const navContent = document.getElementById('navContent');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Check if we're on mobile (button is visible)
+                    if (window.getComputedStyle(toggle).display !== 'none') {
+                        navContent.classList.remove('open');
+                        toggle.innerHTML = '📱 Навигация ≡';
+                    }
+                });
+            });
+        }
+
         // Configure marked for better markdown rendering
         function configureMarked() {
             if (typeof marked !== 'undefined') {
@@ -932,6 +1066,9 @@ done</pre>
         document.addEventListener('DOMContentLoaded', function() {
             // Give libraries time to load
             setTimeout(configureMarked, 100);
+            
+            // Setup mobile menu functionality
+            setupMobileMenuClosing();
         });
 
         async function showMarkdown(filePath, title) {
