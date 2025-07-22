@@ -49,7 +49,7 @@
 
 - [x] 18. Обновить метаданные страницы если необходимо
 - [x] 19. Коммит изменений с подробным описанием
-- [ ] 20. Пуш в ветку feature/JIRA-125-index-update
+- [x] 20. Пуш в ветку feature/JIRA-125-index-update
 
 ## Acceptance Criteria
 
