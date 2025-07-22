@@ -1,134 +1,57 @@
-# Code Review Template
+Perform a code review for the code changes in the code-changes.txt file (git diff format).
+Focus only on the modifications shown there.
 
-## Review Summary
-**Date:** [Current Date]
-**Reviewer:** AI Assistant + [Your Name]
-**Branch:** [Branch Name]
-**Files Changed:** [Number of files]
-**Lines Added/Removed:** [+X/-Y]
+Your review should include:
 
-## Change Overview
-Brief description of what was changed and why:
-[Summary of changes]
+1. ✅ Pros (up to 5–10)
+2. 🛠 Improvement points (up to 5–10)
+3. 📝 Summary of the overall quality (good or bad) with reasons.
+4. 🧩 Alternative snippet showing how to improve the code, with filenames.
 
-## Review Categories
+Cover these aspects:
 
-### 1. Code Quality (Critical)
-**Score:** [1-5] (1=Poor, 5=Excellent)
-**Issues Found:**
-- [ ] **Critical:** [Description] - Line: [X] - Recommendation: [Fix]
-- [ ] **High:** [Description] - Line: [X] - Recommendation: [Fix]
-- [ ] **Medium:** [Description] - Line: [X] - Recommendation: [Fix]
-- [ ] **Low:** [Description] - Line: [X] - Recommendation: [Fix]
+- Best practices, readability, maintainability
+- Intended functionality and performance
+- Formatting and styling
+- Architecture and design
+- Naming of variables, methods, classes
+- Comments and documentation
+- Compliance with the Dev Rules below
 
-**Positive Aspects:**
-- [Good practices observed]
-- [Well-implemented features]
+---
 
-### 2. Security Analysis (Critical)
-**Score:** [1-5]
-**Security Checklist:**
-- [ ] Input validation implemented
-- [ ] SQL injection prevention
-- [ ] XSS protection measures
-- [ ] Authentication/authorization checks
-- [ ] Sensitive data handling
-- [ ] Error information disclosure
+### 🔍 Tests Coverage
 
-**Issues Found:**
-- [Security concerns with recommendations]
+Also check for missing RSpec unit tests.
+List the names of the spec files or example groups that should exist, for example:
 
-### 3. Performance Assessment (High)
-**Score:** [1-5]
-**Performance Checklist:**
-- [ ] Efficient algorithms used
-- [ ] Database queries optimized
-- [ ] Caching implemented where appropriate
-- [ ] Memory usage considerations
-- [ ] Network request optimization
+- spec/services/your_service_spec.rb
+- spec/models/your_model_spec.rb
+- spec/controllers/your_controller_spec.rb
 
-**Issues Found:**
-- [Performance concerns with impact analysis]
+> Do not write the test code itself—only the expected test filenames or example descriptions.
 
-### 4. Architecture Compliance (High)
-**Score:** [1-5]
-**Architecture Checklist:**
-- [ ] Follows established patterns
-- [ ] Proper separation of concerns
-- [ ] Dependency injection used correctly
-- [ ] Error handling consistency
-- [ ] Logging implementation
+---
 
-**Issues Found:**
-- [Architecture violations with suggestions]
+⚙️ Output format
+Use Markdown with emojis, color highlighting and icons to make sections clear and readable.
 
-### 5. Testing Coverage (High)
-**Score:** [1-5]
-**Testing Checklist:**
-- [ ] Unit tests for new functionality
-- [ ] Integration tests where needed
-- [ ] Edge cases covered
-- [ ] Mock usage appropriate
-- [ ] Test readability and maintainability
+````markdown
+### ✅ Pros
 
-**Issues Found:**
-- [Testing gaps with recommendations]
+- …
 
-### 6. Documentation (Medium)
-**Score:** [1-5]
-**Documentation Checklist:**
-- [ ] Code comments where necessary
-- [ ] API documentation updated
-- [ ] README updated if needed
-- [ ] AI usage documented
-- [ ] Complex logic explained
+### 🛠 Improvements
 
-**Issues Found:**
-- [Documentation improvements needed]
+- …
 
-### 7. AI Usage Review (Medium)
-**AI-Generated Code Analysis:**
-- [ ] AI usage properly documented
-- [ ] Generated code reviewed by human
-- [ ] AI suggestions validated
-- [ ] Manual modifications documented
-- [ ] Quality of AI-generated code acceptable
+### 📝 Summary
 
-**AI Usage Issues:**
-- [Concerns about AI-generated portions]
+…
 
-## Overall Assessment
+### 🧩 Alternative Code Snippet (path/to/file.rb)
 
-### Summary Score: [Total Score]/35
-- **Critical Issues:** [Count]
-- **High Priority Issues:** [Count]
-- **Medium Priority Issues:** [Count]
-- **Low Priority Issues:** [Count]
-
-### Recommendation:
-- [ ] **Approve** - Ready for merge
-- [ ] **Approve with Minor Changes** - Address low/medium issues
-- [ ] **Needs Work** - Address high priority issues before merge
-- [ ] **Reject** - Critical issues must be resolved
-
-### Next Steps:
-1. [Priority 1 action items]
-2. [Priority 2 action items]
-3. [Priority 3 action items]
-
-### Positive Feedback:
-[Acknowledge good practices and improvements]
-
-### Learning Opportunities:
-[Suggestions for future development]
-
-## Review Checklist Completion
-- [ ] All code changes analyzed
-- [ ] Security implications considered
-- [ ] Performance impact assessed
-- [ ] Architecture compliance verified
-- [ ] Testing adequacy evaluated
-- [ ] Documentation completeness checked
-- [ ] AI usage properly reviewed
-- [ ] Actionable feedback provided
-- [ ] Overall recommendation given
+```ruby
+# …
+```
+````
