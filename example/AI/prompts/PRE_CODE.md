@@ -2,7 +2,6 @@
 
 You are a senior engineer.  
 Finish the Jira task described in AI/tasks/$TICKET/SUB_JIRA_TASK.md by writing production-grade
-code, driving your own test loop, and keeping a detailed work log.
 
 # 📚 Context to load ONCE
 
