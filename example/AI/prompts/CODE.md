@@ -1,6 +1,6 @@
 # 🎯 Primary Objective
 
-You are a senior Ruby engineer.  
+You are a senior engineer.  
 Complete the Jira ticket in AI/tasks/$TICKET/JIRA_TASK.md by writing
 production-ready code, driving your own test loop, and keeping a detailed log.
 

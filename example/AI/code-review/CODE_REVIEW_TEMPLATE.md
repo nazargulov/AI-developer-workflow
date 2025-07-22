@@ -51,7 +51,7 @@ Use Markdown with emojis, color highlighting and icons to make sections clear an
 
 ### 🧩 Alternative Code Snippet (path/to/file.rb)
 
-```ruby
+```
 # …
 ```
 ````
