@@ -2,11 +2,11 @@ Base rule: Check that you have completed all steps and mark them as done.
 
 1. git diff:
 
-   - git diff dev -- '_.rb' '_.rake' '_.yaml' '_.yml' >> AI/code-review/code-changes.txt
+   - git diff development -- '_.js' '_.html' '_.css' '_.yml' >> AI/code-review/code-changes.txt
 
-   Expected Output: A file named code-changes.txt containing the differences between the current branch and dev for specified file types.
+   Expected Output: A file named code-changes.txt containing the differences between the current branch and development for specified file types.
 
-   Common Issues: Ensure you are on the correct branch and have the latest changes pulled from dev.
+   Common Issues: Ensure you are on the correct branch and have the latest changes pulled from development.
 
 2. Add to context:
 
