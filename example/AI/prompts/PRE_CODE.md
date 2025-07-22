@@ -15,7 +15,7 @@ Finish the Jira task described in AI/tasks/$TICKET/SUB_JIRA_TASK.md by writing p
 **Run once**
 
 - prepare branch for the TASK feature, bugfix or imp.
-- Execute: make dev_initial_setup ???
+- Execute: make dev_initial_setup
 - Create AI/tasks/$TICKET/SUB_JIRA_TASK.md  
   • break the Jira ticket into atomic check-box subtasks  
   • order them logically (↑→↓)  
