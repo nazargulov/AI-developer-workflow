@@ -4,4 +4,20 @@
 Модель: Claude Sonnet 4
 Ветка: feature/JIRA-124-repository-structure-update
 
-## Логи выполнения подзадач 
+## Логи выполнения подзадач
+
+### 22.01.2025 - Подзадача 1.1: Проверить изменения в AI/prompts
+- Статус: ✅ ЗАВЕРШЕНО
+- Изменения: Проверены изменения в AI/prompts - добавлен CODE.md, изменен PRE_CODE.md, удалены CODE_REVIEW.md и DEVELOPMENT_CYCLE.md
+- Тесты: Базовая функциональность проверена (make test)
+- Коммит: [JIRA-124]: Verify AI/prompts changes - CODE.md added, old files removed
+- Модель: Claude Sonnet 4
+- Стоимость USD (накопительно): N/A
+
+### 22.01.2025 - Подзадача 1.2: Проверить изменения в AI/docs  
+- Статус: ✅ ЗАВЕРШЕНО
+- Изменения: Проверены изменения в AI/docs - обновлены api_context.md и user_context.md, удален payment_context.md
+- Тесты: Структурная валидация пройдена
+- Коммит: [JIRA-124]: Verify AI/docs changes - updated contexts, removed payment
+- Модель: Claude Sonnet 4
+- Стоимость USD (накопительно): N/A 
