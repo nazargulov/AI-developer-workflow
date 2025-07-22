@@ -438,28 +438,35 @@
                 <h2>🏗️ AI-Friendly структура репозитория</h2>
             </div>
             <p>Полная структура репозитория, оптимизированная для работы с AI:</p>
+            <div class="workflow-box">
+                <h3>🆕 Новое в структуре (JIRA-124):</h3>
+                <ul>
+                    <li><strong>AI/tasks/</strong> - Управление задачами с полным lifecycle документацией</li>
+                    <li><strong>AI/prompts/CODE.md</strong> - Workflow выполнения задач с итеративным циклом</li>
+                    <li>Удалены устаревшие промпты и контексты</li>
+                </ul>
+            </div>
 
             <div class="file-tree">
 <pre>ai-workflow-example/
 ├── AI/
 │   ├── docs/                     # 📚 AI-optimized context documentation
 │   │   ├── <a href="#" onclick="showMarkdown('AI/docs/main_context.md', 'Main Context'); return false;">main_context.md</a>      # Primary project context
-│   │   ├── <a href="#" onclick="showMarkdown('AI/docs/payment_context.md', 'Payment Context'); return false;">payment_context.md</a>   # Domain-specific contexts
-│   │   ├── <a href="#" onclick="showMarkdown('AI/docs/user_context.md', 'User Context'); return false;">user_context.md</a>
+│   │   ├── <a href="#" onclick="showMarkdown('AI/docs/user_context.md', 'User Context'); return false;">user_context.md</a>     # Domain-specific contexts
 │   │   └── <a href="#" onclick="showMarkdown('AI/docs/api_context.md', 'API Context'); return false;">api_context.md</a>
 │   ├── code-review/              # 🔍 Self-review tools
 │   │   ├── <a href="#" onclick="showMarkdown('AI/code-review/HOW_TO_USE.md', 'How to Use Code Review'); return false;">HOW_TO_USE.md</a>
 │   │   └── <a href="#" onclick="showMarkdown('AI/code-review/CODE_REVIEW_TEMPLATE.md', 'Code Review Template'); return false;">CODE_REVIEW_TEMPLATE.md</a>
 │   ├── prompts/                  # 💬 Critical prompts collection
-│   │   ├── <a href="#" onclick="showMarkdown('AI/prompts/PRE_CODE.md', 'Pre-Code Prompt'); return false;">PRE_CODE.md</a>
-│   │   ├── <a href="#" onclick="showMarkdown('AI/prompts/DEVELOPMENT_CYCLE.md', 'Development Cycle'); return false;">DEVELOPMENT_CYCLE.md</a>
-│   │   └── <a href="#" onclick="showMarkdown('AI/prompts/CODE_REVIEW.md', 'Code Review Prompt'); return false;">CODE_REVIEW.md</a>
+│   │   ├── <a href="#" onclick="showMarkdown('AI/prompts/PRE_CODE.md', 'Pre-Code Prompt'); return false;">PRE_CODE.md</a>        # Task preparation workflow
+│   │   └── <a href="#" onclick="showMarkdown('AI/prompts/CODE.md', 'Code Prompt'); return false;">CODE.md</a>              # Development execution
 │   ├── rules/                    # 📋 Team AI guidelines
 │   │   ├── <a href="#" onclick="showMarkdown('AI/rules/AI_USAGE_POLICY.md', 'AI Usage Policy'); return false;">AI_USAGE_POLICY.md</a>
 │   │   └── <a href="#" onclick="showMarkdown('AI/rules/DEV_RULES.md', 'Development Rules'); return false;">DEV_RULES.md</a>
-│   ├── tasks/                    # 📁 Example solutions
-│   │   ├── completed/
-│   │   └── patterns/
+│   ├── tasks/                    # 📁 Task management workflow
+│   │   ├── JIRA-123/             # Example task structure
+│   │   ├── JIRA-124/             # Repository structure updates
+│   │   └── JITA-125/             # Current task
 │   └── presentation/             # 🎯 Knowledge sharing
 ├── src/                          # Application source code
 ├── tests/                        # Test files
@@ -499,7 +506,6 @@
 
             <div class="workflow-box">
                 <p><strong>Context Engineering:</strong> AI/docs предоставляет достаточный, но не избыточный контекст</p>
-                <p><strong>Реальный эффект:</strong> 31 проанализированная задача показала значительное сокращение времени планирования</p>
             </div>
         </section>
 
@@ -524,7 +530,7 @@
                 <div class="metric-card">
                     <h3>🔄 Workflow Engineering</h3>
                     <p>Системные подходы для разных типов задач</p>
-                    <p><a href="#" onclick="showMarkdown('AI/prompts/DEVELOPMENT_CYCLE.md', 'Development Cycle'); return false;">⚙️ Цикл разработки</a></p>
+                    <p><a href="#" onclick="showMarkdown('AI/prompts/CODE.md', 'Code Execution'); return false;">⚙️ Цикл разработки</a></p>
                 </div>
             </div>
 
@@ -540,8 +546,7 @@
                     <div>
                         <strong>💬 Prompts:</strong><br>
                         <a href="#" onclick="showMarkdown('AI/prompts/PRE_CODE.md', 'Pre-Code'); return false;">Pre-Code</a> |
-                        <a href="#" onclick="showMarkdown('AI/prompts/CODE_REVIEW.md', 'Code Review'); return false;">Code Review</a> |
-                        <a href="#" onclick="showMarkdown('AI/prompts/DEVELOPMENT_CYCLE.md', 'Dev Cycle'); return false;">Dev Cycle</a>
+                        <a href="#" onclick="showMarkdown('AI/prompts/CODE.md', 'Code Execution'); return false;">Code Execution</a>
                     </div>
                     <div>
                         <strong>🔍 Code Review:</strong><br>
@@ -580,6 +585,17 @@
                 <h3>3. Build → Integrate → Delegate → Iterate</h3>
                 <p><strong>Для автоматизации:</strong> Создание инструментов → интеграция с AI → делегирование → улучшение</p>
                 <p><strong>Используется в:</strong> Повторяющиеся задачи, улучшения CI/CD, инструменты</p>
+            </div>
+
+            <div class="workflow-box" style="background: linear-gradient(135deg, #e8f4fd, #f0f8ff); border-left: 4px solid #28a745;">
+                <h3>🆕 AI/tasks Integration</h3>
+                <p><strong>Полный lifecycle задачи:</strong> AI/tasks/$TICKET содержит все этапы от планирования до завершения</p>
+                <ul>
+                    <li><strong>JIRA_TASK.md:</strong> Описание задачи</li>
+                    <li><strong>SUB_JIRA_TASK.md:</strong> Атомарные подзадачи с чекбоксами</li>
+                    <li><strong>NOTES.log:</strong> Детальный лог выполнения</li>
+                    <li><strong>JIRA_UPDATED_TASK.md:</strong> Финальный отчет</li>
+                </ul>
             </div>
         </section>
 
@@ -625,7 +641,6 @@ done</pre>
                         <p>Локально</p>
                         <ul style="text-align: left;">
                             <li>AI/code-review шаблоны</li>
-                            <li>Валидация против dev правил</li>
                         </ul>
                     </div>
                     <div class="metric-card">
@@ -696,12 +711,12 @@ done</pre>
         <section id="slide8" class="slide">
             <div class="slide-header">
                 <span class="slide-number">Слайд 8</span>
-                <h2>📊 Реальные метрики из анализа Jira</h2>
+                <h2>📊 Метрики из анализа Jira</h2>
             </div>
-            <p><strong>Объективное измерение влияния AI (реализация Framework):</strong></p>
+            <p><strong>Субъективное измерение влияния AI без учета Framework:</strong></p>
 
             <div class="workflow-box">
-                <h3>54 реальных задачи проанализированы с AI лейблами:</h3>
+                <h3>50 задач проанализированы с AI лейблами:</h3>
                 <div class="metrics-grid">
                     <div class="metric-card">
                         <div class="metric-number">95%</div>

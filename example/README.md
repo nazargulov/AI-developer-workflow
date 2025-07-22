@@ -30,8 +30,7 @@ ai-workflow-example/
 ├── AI/                           # 🤖 AI workspace
 │   ├── docs/                     # 📚 AI-optimized context
 │   │   ├── main_context.md      # Primary project context
-│   │   ├── payment_context.md   # Domain-specific contexts
-│   │   ├── user_context.md
+│   │   ├── user_context.md      # Domain-specific contexts
 │   │   └── api_context.md
 │   ├── code-review/              # 🔍 Self-review tools
 │   │   ├── HOW_TO_USE.md
@@ -39,8 +38,7 @@ ai-workflow-example/
 │   │   └── AI_REVIEW.md
 │   ├── prompts/                  # 💬 Critical prompts
 │   │   ├── PRE_CODE.md
-│   │   ├── DEVELOPMENT_CYCLE.md
-│   │   └── CODE_REVIEW.md
+│   │   └── CODE.md
 │   ├── rules/                    # 📋 Team guidelines
 │   │   ├── DEV_RULES.md
 │   │   └── AI_USAGE_POLICY.md
@@ -58,20 +56,26 @@ ai-workflow-example/
 ## 🔄 AI Workflow Patterns
 
 ### 1. Explore → Plan → Code → Review
+
 **For complex features:**
+
 - Load AI/docs context
 - Break down into 20-30% automatable subtasks
 - Implement incrementally with continuous testing
 - Self-review before team review
 
 ### 2. Prototype → Rewrite → Improve
+
 **For experimental work:**
+
 - Quick AI-assisted prototyping
 - Learn and iterate
 - Rebuild with production quality
 
 ### 3. Build → Integrate → Delegate → Iterate
+
 **For automation:**
+
 - Create tools with AI assistance
 - Integrate into development workflow
 - Delegate repetitive tasks
@@ -113,16 +117,19 @@ Based on our team's implementation with 43 developers:
 This project demonstrates the three pillars of AI Engineering:
 
 ### 1. Context Engineering
+
 - AI/docs structure provides sufficient, not excess context
 - Domain-specific context files for targeted assistance
 - Clear project patterns and architectural guidelines
 
 ### 2. Prompt Engineering
+
 - Documented effective prompts in AI/prompts/
 - Structured request formats for consistent results
 - Iterative refinement patterns
 
 ### 3. Workflow Engineering
+
 - Systematic approaches for different task types
 - Balance between Human Control ↔ AI Agent Control
 - Measurable productivity improvements
@@ -130,11 +137,13 @@ This project demonstrates the three pillars of AI Engineering:
 ## 🔍 Code Review Process
 
 ### Multi-Level AI Review:
+
 1. **Self-Review (Local):** Use AI/code-review templates
 2. **CI Integration:** Diff Critic with context providers
 3. **Team Review:** Human oversight and final decisions
 
 ### Usage:
+
 ```bash
 # Generate diff for review
 git diff main -- '*.js' '*.html' '*.css' > AI/code-review/code-changes.txt
@@ -167,27 +176,32 @@ make ai-review
 ## 🚦 Getting Started Guide
 
 ### Step 1: Environment Setup
+
 ```bash
 make setup
 docker-compose up -d
 ```
 
 ### Step 2: Choose Your Workflow
+
 - **New feature?** → Use Explore → Plan → Code → Review
 - **Experiment/POC?** → Use Prototype → Rewrite → Improve
 - **Automation task?** → Use Build → Integrate → Delegate → Iterate
 
 ### Step 3: Load Context
+
 - Start with AI/docs/main_context.md
 - Add domain-specific context as needed
 - Reference AI/prompts for effective prompting
 
 ### Step 4: Develop with AI
+
 - Use established patterns from AI/tasks/patterns
 - Follow AI/rules/DEV_RULES.md
 - Document AI usage in commits
 
 ### Step 5: Review Process
+
 - Run `make ai-review` before submitting
 - Follow AI/code-review/HOW_TO_USE.md
 - Complete human validation
@@ -204,7 +218,7 @@ This project serves as a living example of AI-friendly development practices:
 ## 📞 Support
 
 - Check AI/docs/ for project context
-- Reference AI/rules/ for team guidelines  
+- Reference AI/rules/ for team guidelines
 - Use AI/prompts/ for effective prompting
 - Share experiences in team channels
 
