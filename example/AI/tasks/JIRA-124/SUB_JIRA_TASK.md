@@ -9,7 +9,7 @@
 ### 1. Анализ и верификация изменений
 
 - [x] Проверить все изменения в AI/prompts (добавлен CODE.md, изменен PRE_CODE.md, удалены старые файлы)
-- [ ] Проверить все изменения в AI/docs (изменены api_context.md, user_context.md, удален payment_context.md)
+- [x] Проверить все изменения в AI/docs (изменены api_context.md, user_context.md, удален payment_context.md)
 - [ ] Проверить все изменения в AI/code-review (изменены шаблоны, добавлен AI_REVIEW.md)
 - [ ] Верифицировать новую папку AI/tasks и её содержимое
 
