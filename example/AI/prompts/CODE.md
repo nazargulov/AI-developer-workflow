@@ -50,7 +50,7 @@ to reflect any scope changes made during implementation.
 # ✅ Done Criteria
 
 - Every subtask in SUB_JIRA_TASK.md is checked.
-- make greek_rspec_file passes without failures.
+- make test passes without failures.
 - NOTES.log ends with "### All subtasks complete" and the final cost line.
 
 # 🛡️ Guard-Rails
