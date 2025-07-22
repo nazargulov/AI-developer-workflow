@@ -444,22 +444,21 @@
 ├── AI/
 │   ├── docs/                     # 📚 AI-optimized context documentation
 │   │   ├── <a href="#" onclick="showMarkdown('AI/docs/main_context.md', 'Main Context'); return false;">main_context.md</a>      # Primary project context
-│   │   ├── <a href="#" onclick="showMarkdown('AI/docs/payment_context.md', 'Payment Context'); return false;">payment_context.md</a>   # Domain-specific contexts
-│   │   ├── <a href="#" onclick="showMarkdown('AI/docs/user_context.md', 'User Context'); return false;">user_context.md</a>
+│   │   ├── <a href="#" onclick="showMarkdown('AI/docs/user_context.md', 'User Context'); return false;">user_context.md</a>     # Domain-specific contexts
 │   │   └── <a href="#" onclick="showMarkdown('AI/docs/api_context.md', 'API Context'); return false;">api_context.md</a>
 │   ├── code-review/              # 🔍 Self-review tools
 │   │   ├── <a href="#" onclick="showMarkdown('AI/code-review/HOW_TO_USE.md', 'How to Use Code Review'); return false;">HOW_TO_USE.md</a>
 │   │   └── <a href="#" onclick="showMarkdown('AI/code-review/CODE_REVIEW_TEMPLATE.md', 'Code Review Template'); return false;">CODE_REVIEW_TEMPLATE.md</a>
 │   ├── prompts/                  # 💬 Critical prompts collection
-│   │   ├── <a href="#" onclick="showMarkdown('AI/prompts/PRE_CODE.md', 'Pre-Code Prompt'); return false;">PRE_CODE.md</a>
-│   │   ├── <a href="#" onclick="showMarkdown('AI/prompts/DEVELOPMENT_CYCLE.md', 'Development Cycle'); return false;">DEVELOPMENT_CYCLE.md</a>
-│   │   └── <a href="#" onclick="showMarkdown('AI/prompts/CODE_REVIEW.md', 'Code Review Prompt'); return false;">CODE_REVIEW.md</a>
+│   │   ├── <a href="#" onclick="showMarkdown('AI/prompts/PRE_CODE.md', 'Pre-Code Prompt'); return false;">PRE_CODE.md</a>        # Task preparation workflow
+│   │   └── <a href="#" onclick="showMarkdown('AI/prompts/CODE.md', 'Code Prompt'); return false;">CODE.md</a>              # Development execution
 │   ├── rules/                    # 📋 Team AI guidelines
 │   │   ├── <a href="#" onclick="showMarkdown('AI/rules/AI_USAGE_POLICY.md', 'AI Usage Policy'); return false;">AI_USAGE_POLICY.md</a>
 │   │   └── <a href="#" onclick="showMarkdown('AI/rules/DEV_RULES.md', 'Development Rules'); return false;">DEV_RULES.md</a>
-│   ├── tasks/                    # 📁 Example solutions
-│   │   ├── completed/
-│   │   └── patterns/
+│   ├── tasks/                    # 📁 Task management workflow
+│   │   ├── JIRA-123/             # Example task structure
+│   │   ├── JIRA-124/             # Repository structure updates
+│   │   └── JITA-125/             # Current task
 │   └── presentation/             # 🎯 Knowledge sharing
 ├── src/                          # Application source code
 ├── tests/                        # Test files
@@ -524,7 +523,7 @@
                 <div class="metric-card">
                     <h3>🔄 Workflow Engineering</h3>
                     <p>Системные подходы для разных типов задач</p>
-                    <p><a href="#" onclick="showMarkdown('AI/prompts/DEVELOPMENT_CYCLE.md', 'Development Cycle'); return false;">⚙️ Цикл разработки</a></p>
+                    <p><a href="#" onclick="showMarkdown('AI/prompts/CODE.md', 'Code Execution'); return false;">⚙️ Цикл разработки</a></p>
                 </div>
             </div>
 
@@ -540,8 +539,7 @@
                     <div>
                         <strong>💬 Prompts:</strong><br>
                         <a href="#" onclick="showMarkdown('AI/prompts/PRE_CODE.md', 'Pre-Code'); return false;">Pre-Code</a> |
-                        <a href="#" onclick="showMarkdown('AI/prompts/CODE_REVIEW.md', 'Code Review'); return false;">Code Review</a> |
-                        <a href="#" onclick="showMarkdown('AI/prompts/DEVELOPMENT_CYCLE.md', 'Dev Cycle'); return false;">Dev Cycle</a>
+                        <a href="#" onclick="showMarkdown('AI/prompts/CODE.md', 'Code Execution'); return false;">Code Execution</a>
                     </div>
                     <div>
                         <strong>🔍 Code Review:</strong><br>
