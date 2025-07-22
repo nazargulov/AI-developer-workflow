@@ -24,7 +24,7 @@ Examples
 
 **Run until all subtasks checked**
 
-For each unchecked subtask in JIRA_TASK.md:
+For each unchecked subtask in SUB_JIRA_TASK.md:
 
 1. Code – implement only what that subtask needs.
 2. Stage & test  
