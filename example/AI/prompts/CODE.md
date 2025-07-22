@@ -55,7 +55,6 @@ to reflect any scope changes made during implementation.
 
 # 🛡️ Guard-Rails
 
-- Ignore SimpleCov thresholds.
 - If any required context file is missing, request it.
 - On shell-command failure: capture output in NOTES.log & retry once.
 - No opportunistic refactors unless tests require them.
