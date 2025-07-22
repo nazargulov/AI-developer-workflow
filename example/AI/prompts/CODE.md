@@ -39,8 +39,7 @@ For each unchecked subtask in SUB_JIRA_TASK.md:
    • 🔴 On red → fix & re-run; after two consecutive failures, notify the user.
 4. Log – append to NOTES.log inside $TICKET:  
    • Date, subtask, diff summary, test result.  
-   • Model: <model-identifier provided by Cursor> (e.g., "Gemini-2.5", "Claude-Opus").  
-   • Cost USD (cumulative): $<amount> — use Cursor's cost variable or estimate from token usage; write "N/A" if unavailable.
+   • Model: <model-identifier provided by Cursor> (e.g., "Gemini-2.5", "Claude-Opus").
 5. Repeat with the next unchecked subtask.
 
 # 🏁 Last Step
