@@ -84,7 +84,7 @@ ai-review:
 	@echo "  - AI/code-review/code-changes.txt (your changes)"
 	@echo "  - AI/code-review/CODE_REVIEW_TEMPLATE.md (review template)"
 	@echo "  - AI/docs/main_context.md (project context)"
-	@echo "  - AI/rules/DEV_RULES.md (development rules)"
+	@echo "  - AI/rules/ (development rules and guidelines)"
 	@echo ""
 	@echo "Next steps:"
 	@echo "1. Load these files into your AI tool"

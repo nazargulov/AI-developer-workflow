@@ -1,0 +1,4 @@
+---
+alwaysApply: true
+---
+Don't remove columns or indexes in database if it is not defined in task exactly

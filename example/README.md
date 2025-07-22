@@ -40,8 +40,9 @@ ai-workflow-example/
 │   │   ├── PRE_CODE.md
 │   │   └── CODE.md
 │   ├── rules/                    # 📋 Team guidelines
-│   │   ├── DEV_RULES.md
-│   │   └── AI_USAGE_POLICY.md
+│   │   ├── database.mdc
+│   │   ├── git.mdc
+│   │   └── docker-file-rule.mdc
 │   ├── tasks/                    # 📁 Examples & patterns
 │   │   ├── completed/
 │   │   └── patterns/
@@ -197,7 +198,7 @@ docker-compose up -d
 ### Step 4: Develop with AI
 
 - Use established patterns from AI/tasks/patterns
-- Follow AI/rules/DEV_RULES.md
+- Follow established AI rules
 - Document AI usage in commits
 
 ### Step 5: Review Process

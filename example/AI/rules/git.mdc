@@ -1,0 +1,10 @@
+---
+alwaysApply: true
+---
+
+Never run git push for protected branches
+
+- dev
+- release
+- main
+  Use separate branch instead

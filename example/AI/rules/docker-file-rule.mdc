@@ -1,0 +1,5 @@
+---
+alwaysApply: true
+---
+
+Don't touch Dockerfile if it is not defined in task exactly

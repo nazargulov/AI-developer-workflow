@@ -1,17 +1,17 @@
-# ── 0. PRIMARY OBJECTIVE ────────────────────────────────────────────────────
+# 🎯 Primary Objective
 
 You are a senior Ruby engineer.  
 Complete the Jira ticket in AI/tasks/$TICKET/JIRA_TASK.md by writing
 production-ready code, driving your own test loop, and keeping a detailed log.
 
-# == Context to load ONCE =====================================================
+# 📚 Context to load ONCE
 
 1. AI/docs/main_context.md # service architecture & domain context
 2. the entire AI/tasks/$TICKET # task description, logs, subtasks, reports
 3. ?? # dev & test helpers
 4. use Context7 # (Cursor-specific)
 
-# ── 2. GIT COMMIT CONVENTION ────────────────────────────────────────────────
+# 📝 Git Commit Convention
 
 Every commit message must start with  
 [$TICKET]: followed by a concise, imperative summary (≤ 72 chars).
@@ -20,7 +20,9 @@ Examples
 • [$TICKET]: Add null-check
 • [$TICKET]: Fix spec
 
-# ── 3. ITERATIVE LOOP ── run until all subtasks checked ─────────────────────
+# 🔄 Iterative Loop
+
+**Run until all subtasks checked**
 
 For each unchecked subtask in JIRA_TASK.md:
 
@@ -37,29 +39,29 @@ For each unchecked subtask in JIRA_TASK.md:
    • 🔴 On red → fix & re-run; after two consecutive failures, notify the user.
 4. Log – append to NOTES.log inside $TICKET:  
    • Date, subtask, diff summary, test result.  
-   • Model: <model-identifier provided by Cursor> (e.g., “Gemini-2.5”, “Claude-Opus”).  
-   • Cost USD (cumulative): $<amount> — use Cursor’s cost variable or estimate from token usage; write “N/A” if unavailable.
+   • Model: <model-identifier provided by Cursor> (e.g., "Gemini-2.5", "Claude-Opus").  
+   • Cost USD (cumulative): $<amount> — use Cursor's cost variable or estimate from token usage; write "N/A" if unavailable.
 5. Repeat with the next unchecked subtask.
 
-# ── 4. LAST STEP ────────────────────────────────────────────────────────────
+# 🏁 Last Step
 
 Update AI/tasks/$TICKET/JIRA_UPDATED_TASK.md, especially acceptance criteria,
 to reflect any scope changes made during implementation.
 
-# ── 5. DONE CRITERIA ────────────────────────────────────────────────────────
+# ✅ Done Criteria
 
 - Every subtask in SUB_JIRA_TASK.md is checked.
 - make greek_rspec_file passes without failures.
-- NOTES.log ends with “### All subtasks complete” and the final cost line.
+- NOTES.log ends with "### All subtasks complete" and the final cost line.
 
-# ── 6. GUARD-RAILS ──────────────────────────────────────────────────────────
+# 🛡️ Guard-Rails
 
 - Ignore SimpleCov thresholds.
 - If any required context file is missing, request it.
 - On shell-command failure: capture output in NOTES.log & retry once.
 - No opportunistic refactors unless tests require them.
 
-# ── 7. BASE RULE ────────────────────────────────────────────────────────────
+# 📏 Base Rule
 
 After each agent cycle, assert that every step above is complete;  
-if yes, reply “DONE”, otherwise list what is still pending.
+if yes, reply "DONE", otherwise list what is still pending.

@@ -22,8 +22,9 @@ app/
 │   │   ├── EXPLORE.md           # Codebase exploration
 │   │   └── TICKET_SUMMARY.md    # Task analysis templates
 │   ├── rules/                    # Team AI guidelines
-│   │   ├── DEV_RULES.md         # Development best practices
-│   │   └── AI_USAGE_POLICY.md   # AI usage guidelines
+│   │   ├── database.mdc         # Database rules and guidelines
+│   │   ├── git.mdc              # Git workflow rules
+│   │   └── docker-file-rule.mdc # Docker configuration rules
 │   ├── tasks/                    # Example solutions
 │   │   ├── completed/           # Successfully solved tasks
 │   │   └── patterns/            # Common solution patterns
