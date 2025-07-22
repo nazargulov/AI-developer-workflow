@@ -29,8 +29,8 @@ For each unchecked subtask in SUB_JIRA_TASK.md:
 1. Code – implement only what that subtask needs.
 2. Stage & test  
    • Run pending migrations if required.  
-   • Execute _only_ the impacted specs: make greek_rspec_file???.  
-   • Run bundle exec rubocop and resolve offences.
+   • Execute _only_ the impacted specs: make test.  
+   • Run make lint.
 3. Analyse & commit  
    • ✅ On green →  
     – mark the subtask [x] in SUB_JIRA_TASK.md.  
