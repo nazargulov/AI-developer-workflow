@@ -25,10 +25,10 @@ app/
 │   │   ├── database.mdc         # Database rules and guidelines
 │   │   ├── git.mdc              # Git workflow rules
 │   │   └── docker-file-rule.mdc # Docker configuration rules
-│   ├── tasks/                    # Example solutions
-│   │   ├── completed/           # Successfully solved tasks
-│   │   └── patterns/            # Common solution patterns
-│   └── presentation/             # Knowledge sharing materials
+│   └── tasks/                    # Task management examples
+│       ├── JIRA-123/            # Example task structure
+│       ├── JIRA-124/            # Task with updates and notes
+│       └── JITA-125/            # Task with development logs
 ├── Makefile                      # Automated development workflows
 ├── Dockerfile                    # Consistent development environment
 ├── docker-compose.yml           # Service orchestration
@@ -219,7 +219,7 @@ Lint issues: #{lint_issues}
 1. **Setup AI workspace:** `make setup-ai`
 2. **Review AI/rules:** Understand team guidelines
 3. **Practice with AI/code-review:** Learn self-review process
-4. **Study AI/tasks/patterns:** See successful examples
+4. **Study AI/tasks/:** See task management examples
 
 ### Knowledge Sharing Process
 

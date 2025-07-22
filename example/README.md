@@ -43,10 +43,10 @@ ai-workflow-example/
 │   │   ├── database.mdc
 │   │   ├── git.mdc
 │   │   └── docker-file-rule.mdc
-│   ├── tasks/                    # 📁 Examples & patterns
-│   │   ├── completed/
-│   │   └── patterns/
-│   └── presentation/             # 🎯 Knowledge sharing
+│   └── tasks/                    # 📁 Task management workflow
+│       ├── JIRA-123/            # Example task structure
+│       ├── JIRA-124/            # Task with updates and notes
+│       └── JITA-125/            # Task with development logs
 ├── src/                          # Application code
 ├── tests/                        # Test files
 ├── Makefile                      # 🔧 Automated workflows
@@ -160,8 +160,7 @@ make ai-review
 
 - **AI/docs/** - Project context optimized for AI consumption
 - **AI/prompts/** - Effective prompt templates
-- **AI/tasks/patterns/** - Workflow patterns and best practices
-- **AI/tasks/completed/** - Real implementation examples
+- **AI/tasks/** - Task management examples and workflows
 
 ## ⚠️ Important Principles
 
@@ -197,7 +196,7 @@ docker-compose up -d
 
 ### Step 4: Develop with AI
 
-- Use established patterns from AI/tasks/patterns
+- Use established patterns from AI/tasks/ examples
 - Follow established AI rules
 - Document AI usage in commits
 
@@ -211,8 +210,7 @@ docker-compose up -d
 
 This project serves as a living example of AI-friendly development practices:
 
-- **Add new patterns** to AI/tasks/patterns/
-- **Document successful workflows** in AI/tasks/completed/
+- **Document task workflows** in AI/tasks/ using JIRA format
 - **Improve prompts** based on experience
 - **Share learnings** with the team
 

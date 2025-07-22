@@ -32,8 +32,7 @@ app/
 │   ├── code-review/       # Self-review templates and tools
 │   ├── prompts/           # Critical prompts documentation
 │   ├── rules/             # Development guidelines
-│   ├── tasks/             # Task examples and solutions
-│   └── presentation/      # Knowledge sharing materials
+│   └── tasks/             # Task management examples
 ├── Makefile              # Automated dev workflows
 ├── Dockerfile            # Consistent environment
 └── README.md             # Human-readable project overview

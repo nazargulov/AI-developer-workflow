@@ -135,7 +135,7 @@ workflow-explore:
 workflow-plan:
 	@echo "📋 Starting Plan phase..."
 	@echo "Break down your task into subtasks (20-30% AI automation)"
-	@echo "Reference: AI/tasks/patterns/workflow_patterns.md"
+	@echo "Reference: AI/tasks/ for workflow examples"
 
 workflow-code:
 	@echo "💻 Starting Code phase..."
