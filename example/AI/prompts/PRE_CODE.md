@@ -7,7 +7,7 @@ Finish the Jira task described in AI/tasks/$TICKET/SUB_JIRA_TASK.md by writing p
 
 1. AI/docs/main_context.md # service architecture & domain context
 2. the entire AI/tasks/$TICKET # task description, logs, subtasks, reports
-3. ?? # dev & test helpers
+3. Makefile
 4. use Context7 # (Cursor-specific)
 
 # ⚙️ Setup

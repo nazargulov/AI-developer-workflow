@@ -8,7 +8,7 @@ production-ready code, driving your own test loop, and keeping a detailed log.
 
 1. AI/docs/main_context.md # service architecture & domain context
 2. the entire AI/tasks/$TICKET # task description, logs, subtasks, reports
-3. ?? # dev & test helpers
+3. Makefile
 4. use Context7 # (Cursor-specific)
 
 # 📝 Git Commit Convention
