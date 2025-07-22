@@ -23,7 +23,30 @@
 
 ---
 
-## Slide 1: AI-Friendly Repository Structure
+## Slide 1: Real Metrics from Jira Analysis
+
+### Objective AI Impact Measurement (Framework Implementation)
+
+**54 Real Tasks Analyzed with AI Labels:**
+
+- **Planning (ai*devplan*\*)**: 90% average effectiveness (3 tasks)
+- **Jira Management (ai*jira*\*)**: 95% average effectiveness (2 tasks)
+- **Development (ai*dev*\*)**: 17.5% average effectiveness (28 tasks)
+- **QA Testing (ai*qa*\*)**: 7.2% average effectiveness (10 tasks)
+- **RSpec Tests**: 23.6% average effectiveness (11 tasks)
+
+**Distribution Analysis:**
+
+- **High Impact (50%+)**: 7 tasks (13% of all tasks)
+- **Medium Impact (20-49%)**: 9 tasks (17% of all tasks)
+- **Low Impact (1-19%)**: 25 tasks (46% of all tasks)
+- **No Impact (0%)**: 12 tasks (22% of all tasks)
+
+**Key Insight:** Planning and administrative tasks show highest AI efficiency
+
+---
+
+## Slide 2: AI-Friendly Repository Structure
 
 ```
 app/
@@ -44,28 +67,6 @@ app/
 - Replaces generic README with AI-optimized documentation
 - Multiple context files for different scenarios
 - One main context file for consistent AI understanding
-
----
-
-## Slide 2: Pre-Coding Phase - Task Preparation
-
-### AI Workflow Pattern: **Explore → Plan → Code → Review**
-
-**Input:** JIRA ticket + repository context (AI/docs/)
-**Output:** Development plan + prepared branch
-
-**Process:**
-
-1. **Explore** - AI analyzes codebase and ticket context
-2. **Plan** - Breaks down into 20-30% implementable subtasks
-3. **Code** - Docker container with running tests ready
-4. **Review** - Self-review before implementation starts
-
-**Context Engineering:** AI/docs provides sufficient, not excess context
-
-**Real Impact:** 54 analyzed tasks with quantified AI effectiveness metrics
-
-**Measurement Framework:** Using AI labels (ai_role_efficiency) in Jira to track objective impact
 
 ---
 
@@ -187,30 +188,7 @@ done
 
 ---
 
-## Slide 8: Real Metrics from Jira Analysis
-
-### Objective AI Impact Measurement (Framework Implementation)
-
-**54 Real Tasks Analyzed with AI Labels:**
-
-- **Planning (ai*devplan*\*)**: 90% average effectiveness (3 tasks)
-- **Jira Management (ai*jira*\*)**: 95% average effectiveness (2 tasks)
-- **Development (ai*dev*\*)**: 17.5% average effectiveness (28 tasks)
-- **QA Testing (ai*qa*\*)**: 7.2% average effectiveness (10 tasks)
-- **RSpec Tests**: 23.6% average effectiveness (11 tasks)
-
-**Distribution Analysis:**
-
-- **High Impact (50%+)**: 7 tasks (13% of all tasks)
-- **Medium Impact (20-49%)**: 9 tasks (17% of all tasks)
-- **Low Impact (1-19%)**: 25 tasks (46% of all tasks)
-- **No Impact (0%)**: 12 tasks (22% of all tasks)
-
-**Key Insight:** Planning and administrative tasks show highest AI efficiency
-
----
-
-## Slide 9: Survey Results & Tool Adoption
+## Slide 8: Survey Results & Tool Adoption
 
 ### Subjective Experience Analysis
 
@@ -235,7 +213,7 @@ done
 
 ---
 
-## Slide 10: Comparison: Weak vs Strong AI Solutions
+## Slide 9: Comparison: Weak vs Strong AI Solutions
 
 **Gemini 2.5 Pro (Weak Solution):**
 
@@ -253,7 +231,7 @@ done
 
 ---
 
-## Slide 11: Implementation Challenges & Solutions
+## Slide 10: Implementation Challenges & Solutions
 
 ### Common Issues and Mitigation Strategies
 
@@ -270,7 +248,7 @@ done
 
 ---
 
-## Slide 12: Success Factors
+## Slide 11: Success Factors
 
 ### What Makes AI Integration Successful
 
@@ -284,7 +262,7 @@ done
 
 ---
 
-## Slide 13: Next Steps & Recommendations
+## Slide 12: Next Steps & Recommendations
 
 ### Scaling AI in Your Organization
 
@@ -297,8 +275,7 @@ done
 **Medium-term Goals:**
 
 - Integrate AI into CI/CD pipeline
-- Establish team guidelines and training
-- Collect and analyze usage metrics
+- Develop new MCP
 
 **Long-term Vision:**
 
@@ -308,7 +285,7 @@ done
 
 ---
 
-## Slide 14: Always Remember
+## Slide 13: Always Remember
 
 ### **Git blame will show your name.**
 

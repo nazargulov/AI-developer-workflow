@@ -412,8 +412,8 @@
             </button>
             <div class="nav-content" id="navContent">
                 <div class="nav-row">
-                    <a href="#slide1">1: Repository Structure</a>
-                    <a href="#slide2">2: Pre-Code</a>
+                    <a href="#slide1">1: Jira Metrics</a>
+                    <a href="#slide2">2: Repository Structure</a>
                     <a href="#slide3">3: Context Engineering</a>
                     <a href="#slide4">4: Workflow Patterns</a>
                     <a href="#slide5">5: Dev Cycle</a>
@@ -421,13 +421,13 @@
                     <a href="#slide7">7: Guidelines</a>
                 </div>
                 <div class="nav-row">
-                    <a href="#slide8">8: Jira Metrics</a>
-                    <a href="#slide9">9: Survey Results</a>
-                    <a href="#slide10">10: Comparison</a>
-                    <a href="#slide11">11: Challenges</a>
-                    <a href="#slide12">12: Success</a>
-                    <a href="#slide13">13: Next Steps</a>
-                    <a href="#slide14">14: Remember</a>
+                    <a href="#slide8">8: Survey Results</a>
+                    <a href="#slide9">9: Comparison</a>
+                    <a href="#slide10">10: Challenges</a>
+                    <a href="#slide11">11: Success</a>
+                    <a href="#slide12">12: Next Steps</a>
+                    <a href="#slide13">13: Remember</a>
+                </div>
                 </div>
             </div>
         </div>
@@ -435,6 +435,63 @@
         <section id="slide1" class="slide">
             <div class="slide-header">
                 <span class="slide-number">Слайд 1</span>
+                <h2>📊 Метрики из анализа Jira</h2>
+            </div>
+            <p><strong>Субъективное измерение влияния AI без учета Framework:</strong></p>
+
+            <div class="workflow-box">
+                <h3>50 задач проанализированы с AI лейблами:</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-number">95%</div>
+                        <p>Jira Management (ai_jira_*) - 2 задачи</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">90%</div>
+                        <p>Planning (ai_devplan_*) - 3 задачи</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">23.6%</div>
+                        <p>RSpec Tests - 11 задач</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">17.5%</div>
+                        <p>Development (ai_dev_*) - 28 задач</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">7.2%</div>
+                        <p>QA Testing (ai_qa_*) - 10 задач</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workflow-box">
+                <h3>Анализ распределения эффективности:</h3>
+                <div class="metrics-grid" style="margin-top: 15px;">
+                    <div class="metric-card">
+                        <div class="metric-number">13%</div>
+                        <p>Высокое влияние (50%+) - 7 задач</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">17%</div>
+                        <p>Среднее влияние (20-49%) - 9 задач</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">46%</div>
+                        <p>Низкое влияние (1-19%) - 25 задач</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">22%</div>
+                        <p>Без влияния (0%) - 12 задач</p>
+                    </div>
+                </div>
+                <p><strong>Ключевая находка:</strong> Планирование и административные задачи показывают наивысшую эффективность AI</p>
+            </div>
+        </section>
+
+        <section id="slide2" class="slide">
+            <div class="slide-header">
+                <span class="slide-number">Слайд 2</span>
                 <h2>🏗️ AI-Friendly структура репозитория</h2>
             </div>
             <p>Полная структура репозитория, оптимизированная для работы с AI:</p>
@@ -476,38 +533,6 @@
 ├── <a href="#" onclick="showFile('Dockerfile', 'Dockerfile - Container Configuration'); return false;">Dockerfile</a>                    # 🐳 Consistent environment
 ├── <a href="#" onclick="showFile('docker-compose.yml', 'Docker Compose Configuration'); return false;">docker-compose.yml</a>
 └── <a href="#" onclick="showMarkdown('README.md', 'Project README'); return false;">README.md</a>                     # Human-readable overview</pre>
-            </div>
-        </section>
-
-        <section id="slide2" class="slide">
-            <div class="slide-header">
-                <span class="slide-number">Слайд 2</span>
-                <h2>📋 Pre-Coding Phase - Task Preparation</h2>
-            </div>
-
-            <div class="workflow-box">
-                <h3>AI Workflow Pattern: Explore → Plan → Code → Review</h3>
-                <p><strong>Input:</strong> JIRA ticket + repository context (AI/docs/)</p>
-                <p><strong>Output:</strong> Development plan + prepared branch</p>
-            </div>
-
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <h3>1. 🔍 Explore</h3>
-                    <p>AI анализирует кодовую базу и контекст задачи</p>
-                </div>
-                <div class="metric-card">
-                    <h3>2. 📝 Plan</h3>
-                    <p>Разбивает на подзадачи с 20-30% автоматизации</p>
-                </div>
-                <div class="metric-card">
-                    <h3>3. 💻 Code</h3>
-                    <p>Docker контейнер с работающими тестами готов</p>
-                </div>
-            </div>
-
-            <div class="workflow-box">
-                <p><strong>Context Engineering:</strong> AI/docs предоставляет достаточный, но не избыточный контекст</p>
             </div>
         </section>
 
@@ -666,66 +691,11 @@ done</pre>
             </div>
         </section>
 
+
+
         <section id="slide8" class="slide">
             <div class="slide-header">
                 <span class="slide-number">Слайд 8</span>
-                <h2>📊 Метрики из анализа Jira</h2>
-            </div>
-            <p><strong>Субъективное измерение влияния AI без учета Framework:</strong></p>
-
-            <div class="workflow-box">
-                <h3>50 задач проанализированы с AI лейблами:</h3>
-                <div class="metrics-grid">
-                    <div class="metric-card">
-                        <div class="metric-number">95%</div>
-                        <p>Jira Management (ai_jira_*) - 2 задачи</p>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-number">90%</div>
-                        <p>Planning (ai_devplan_*) - 3 задачи</p>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-number">23.6%</div>
-                        <p>RSpec Tests - 11 задач</p>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-number">17.5%</div>
-                        <p>Development (ai_dev_*) - 28 задач</p>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-number">7.2%</div>
-                        <p>QA Testing (ai_qa_*) - 10 задач</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="workflow-box">
-                <h3>Анализ распределения эффективности:</h3>
-                <div class="metrics-grid" style="margin-top: 15px;">
-                    <div class="metric-card">
-                        <div class="metric-number">13%</div>
-                        <p>Высокое влияние (50%+) - 7 задач</p>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-number">17%</div>
-                        <p>Среднее влияние (20-49%) - 9 задач</p>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-number">46%</div>
-                        <p>Низкое влияние (1-19%) - 25 задач</p>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-number">22%</div>
-                        <p>Без влияния (0%) - 12 задач</p>
-                    </div>
-                </div>
-                <p><strong>Ключевая находка:</strong> Планирование и административные задачи показывают наивысшую эффективность AI</p>
-            </div>
-        </section>
-
-        <section id="slide9" class="slide">
-            <div class="slide-header">
-                <span class="slide-number">Слайд 9</span>
                 <h2>📋 Результаты опроса и внедрение инструментов</h2>
             </div>
             <p><strong>Анализ субъективного опыта (опрос 43 участников команды):</strong></p>
@@ -784,9 +754,9 @@ done</pre>
             </div>
         </section>
 
-        <section id="slide10" class="slide">
+        <section id="slide9" class="slide">
             <div class="slide-header">
-                <span class="slide-number">Слайд 10</span>
+                <span class="slide-number">Слайд 9</span>
                 <h2>⚖️ Comparison: Weak vs Strong AI Solutions</h2>
             </div>
 
@@ -815,9 +785,9 @@ done</pre>
             </div>
         </section>
 
-        <section id="slide11" class="slide">
+        <section id="slide10" class="slide">
             <div class="slide-header">
-                <span class="slide-number">Слайд 11</span>
+                <span class="slide-number">Слайд 10</span>
                 <h2>⚠️ Implementation Challenges & Solutions</h2>
             </div>
 
@@ -855,9 +825,9 @@ done</pre>
             </div>
         </section>
 
-        <section id="slide12" class="slide">
+        <section id="slide11" class="slide">
             <div class="slide-header">
-                <span class="slide-number">Слайд 12</span>
+                <span class="slide-number">Слайд 11</span>
                 <h2>🎯 Success Factors</h2>
             </div>
             <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px;">Что делает интеграцию AI успешной</p>
@@ -891,9 +861,9 @@ done</pre>
             </div>
         </section>
 
-        <section id="slide13" class="slide">
+        <section id="slide12" class="slide">
             <div class="slide-header">
-                <span class="slide-number">Слайд 13</span>
+                <span class="slide-number">Слайд 12</span>
                 <h2>🚀 Next Steps & Recommendations</h2>
             </div>
             <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px;">Масштабирование AI в вашей организации</p>
@@ -903,7 +873,7 @@ done</pre>
                     <h3>⚡ Immediate Actions</h3>
                     <ul style="text-align: left;">
                         <li>Настроить AI-Friendly структуру репозитория</li>
-                        <li>Внедрить процессы самопроверки</li>
+                        <li>Внедрить AI-reviewer</li>
                         <li>Документировать эффективные стратегии промптинга</li>
                     </ul>
                 </div>
@@ -911,24 +881,21 @@ done</pre>
                     <h3>🎯 Medium-term Goals</h3>
                     <ul style="text-align: left;">
                         <li>Интегрировать AI в CI/CD pipeline</li>
-                        <li>Установить командные рекомендации и обучение</li>
-                        <li>Собирать и анализировать метрики использования</li>
+                        <li>Разрабатывать собственные MCP</li>
                     </ul>
                 </div>
                 <div class="metric-card" style="background: linear-gradient(135deg, #5B6CEA, #4C5FD5); color: white;">
                     <h3>🌟 Long-term Vision</h3>
                     <ul style="text-align: left;">
-                        <li>Культура AI-усиленной разработки</li>
-                        <li>Непрерывное улучшение на основе данных</li>
-                        <li>Обмен знаниями между командами</li>
+                        <li>Культура AI разработки</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="slide14" class="slide">
+        <section id="slide13" class="slide">
             <div class="slide-header">
-                <span class="slide-number">Слайд 14</span>
+                <span class="slide-number">Слайд 13</span>
                 <h2>⚠️ Always Remember</h2>
             </div>
             
